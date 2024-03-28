@@ -17,12 +17,12 @@ export default function RootLayout({ children }) {
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
           <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Container>
-            {children}
+            <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+              {children}
             </Container>
           </ThemeProvider>
         </AppRouterCacheProvider>
-        </body>
+      </body>
     </html>
   );
 }
