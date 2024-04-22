@@ -11,7 +11,7 @@ const TileScroller = ({ data,name, ...props }) => {
         <Typography variant="h3" component="h2">
             {name}
         </Typography>
-        <Box display='flex' justifyContent='center' gap={4} paddingY={4} width='80vw' sx={{
+        <Box display='flex' justifyContent='flex-start' gap={4} padding={4} width='80vw' sx={{
             overflowX: 'scroll'
         }}>
             {data.items.map((item,index) => <Tile key={index} item={item} />)}
